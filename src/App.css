@@ -1,0 +1,455 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.toolbar {
+  background: #212529;
+  height: 100px;
+  display:inline-flex;
+  position: fixed;
+  justify-content: space-between;
+}
+.NavBar {
+  background: #241d3b;
+  height: 100px;
+  display:inline-flex;
+  position: fixed;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.NavBarText{
+  display: inline-flex;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-size: 30px;
+  color: bisque;
+}
+#myVideo {
+  position: fixed;
+  min-width: 100%;
+  
+}
+.PayPal-Button{
+  border-radius: 0rem;
+  justify-content: center;
+  margin-left: 790px;
+  margin-top: 200px;
+  height: 78px;
+  width: 360px;
+}
+.PayPal-Button2{
+  border-radius: 0rem;
+  justify-content: center;
+ 
+  height: 80px;
+  width: 360px;
+}
+@keyframes example {
+  from {background-color: transparent;}
+  to {background-color: #032128;}
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  
+ 
+}
+.textfield{
+  margin-right: 250px;
+  margin-left: 41px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding:  50px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-name: example ;
+  animation-duration: 5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1.025rem;
+}
+
+.flip-card-front {
+  background-color: rgb(21, 5, 44);
+ 
+}
+
+.flip-card-back {
+  background-color: #aa66cc;
+  color: white;
+  transform: rotateY(180deg);
+}
+.list{
+  justify-content: space-around;
+}
+.h1 {
+  position: fixed;
+  display: block;
+  opacity: 0;
+  font-size: 40px;
+  font-weight: 10;
+  color: #f3d2d2;
+  visibility: visible;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: visibility 0s, opacity 0.5s linear;
+  padding: 20px;
+}
+.h1:hover{
+  visibility: visible;
+  opacity: 1;
+}
+#table {
+  border-radius: 1.625rem;
+}
+#table td, #table th {
+  border: 0px;
+  margin: auto;
+  font-size: 16px;
+  height: 80px;
+  line-height: 1.5.cm;
+  text-align: center;
+  width: 200px;
+  border: 0px solid;
+  display: inline-block;
+  border-radius: 1.625rem;
+  
+  text-align: center;
+  
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 50px;
+}
+#table thead{
+  background: #343a40;
+  color: whitesmoke;
+  border: #030130;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5.cm;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px solid;
+}
+#table th{
+  background: #343a40;
+  color: whitesmoke;
+  text-align: center;
+  display: inline-block;
+  border-radius: 1.625rem;
+  text-align: center;
+  font-weight: 100;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px solid;
+}
+#table tr{
+  background: #343a40;
+  color: whitesmoke;
+  text-align: left;
+  border-radius: 1.625rem;
+  height: 60px;
+  font-weight: 100;
+  font-weight: 100;
+ width: 200px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0px solid;
+}
+.FormGroup {
+  margin: 0 15px 20px;
+  padding: 0;
+  border-style: none;
+  
+  will-change: opacity, transform;
+  box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+.FormRow 
+{
+  height: 100px;
+  width: 80%;
+  font-size: larger;
+  display: table;
+}
+.button2{
+  background:#262626;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.225em;
+  border-color: #9FA6B2;
+  height: 85px;
+  width: 180px;
+
+}
+.stock{
+  color:#030130;
+  font-size: 50px;
+  font-weight: 100;
+  margin-left: 189px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.icon2{
+  color: white;
+  width: 150px;
+  height: 150px;
+  
+}
+.stocki{
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 189px;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.stockigreen{
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 189px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+.stockired{
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 189px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+.Arrowsize{
+
+}
+
+.button3{
+  background:#262626;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.225em;
+  border-color: #9FA6B2;
+  margin-top: 5px;
+  height: 70px;
+  width: 180px;
+  
+
+
+}
+.chart{
+  width: 30%;
+  margin-left: 1250px;
+  margin-top: 20px;
+}
+.x{
+  margin-bottom: 5010px;
+  
+}
+.button4{
+  background:#262626;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.225em;
+  border-color: #9FA6B2;
+  margin-top: 5px;
+  height: 70px;
+  width: 180px;
+  margin-left: 300px;
+  
+
+
+}
+
+.button2:hover{
+  background: #373b43;
+  width: 180px;
+  height: 50px;
+}
+#table td{
+  font-size: 25px;
+   font-weight: 100;
+}
+#table tr:hover{
+  background: #110b19;
+}
+.body {
+  background-color: #010115;
+}
+.authform {
+  
+  position: relative;
+  left: 50px;
+}
+.text {
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1.625em;
+  height: 70px;
+  border-color: white;
+  width: 300px;
+}
+.label{
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Text{
+  
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.text:hover{
+  border-color: white;
+  background-color: white
+}
+.button {
+  background-color: #cf9906;
+  border-radius: 1.625em;
+  width: 200px;
+  height: 85px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.ul{
+  margin: 0cm;
+  padding: 0cm;
+  display: inline;
+}
+.ul p{
+  
+  display: inline;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-size: 30px;
+  color: bisque;
+}
+.v{
+  display: inline-flex;
+  margin: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  font-size: 30px;
+  color: bisque;
+}
+.display{
+  display: inline-flex;
+  
+}
+.login{
+  padding: 1rem
+}
+.icon{
+  background: whitesmoke;
+  
+}
+.v :hover{
+  opacity:inherit;
+  background: #D2042D;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  position: absolute;
+  top: 65px;
+  right: 20px;
+  
+  background-color: #01011c;
+  min-width: 160px;
+  margin-right: 650px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 14px;
+  z-index: 1;
+}
+.v:hover .dropdown-content {
+  display: block;
+}
+.card_field{
+  background: #010115;
+}
+.dropdown-content a {
+
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
