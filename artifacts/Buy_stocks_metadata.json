@@ -1,0 +1,758 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "PaymentTransactions",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "Buyer",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "high",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "low",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "open",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "close",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "volume",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Buy_stocks.stock",
+						"name": "stock_",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "SalesTransactions",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "seller",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "high",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "low",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "open",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "close",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "volume",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Buy_stocks.stock",
+						"name": "stock_",
+						"type": "tuple"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sale_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "customer",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "for_sale",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "sold",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "customer",
+						"type": "string"
+					}
+				],
+				"name": "UpdatesellShareofAstock",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "seller",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "timestamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "high",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "low",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "open",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "close",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "volume",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "owner",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Buy_stocks.stock",
+								"name": "stock_",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sale_price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "customer",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "for_sale",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "sold",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Buy_stocks.Sale",
+						"name": "s",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addFundsToWallet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "balance",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Buy_stocks.wallet",
+						"name": "w",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "high",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "low",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "open",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "close",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "volume",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "Buyer",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					}
+				],
+				"name": "addPaymentTransaction",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPaymentTransactionsList",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "Buyer",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "timestamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "high",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "low",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "open",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "close",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "volume",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "owner",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Buy_stocks.stock",
+								"name": "stock_",
+								"type": "tuple"
+							}
+						],
+						"internalType": "struct Buy_stocks.payment[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSalesTransactionsList",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "seller",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "timestamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "high",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "low",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "open",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "close",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "volume",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "owner",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Buy_stocks.stock",
+								"name": "stock_",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sale_price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "customer",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "for_sale",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "sold",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Buy_stocks.Sale[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "high",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "low",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sale_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "open",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "Financial_Instrument",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "close",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "volume",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "seller",
+						"type": "string"
+					}
+				],
+				"name": "sellShareofaStock",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "_id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "seller",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "uint256",
+										"name": "timestamp",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "high",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "low",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "open",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "close",
+										"type": "uint256"
+									},
+									{
+										"internalType": "uint256",
+										"name": "volume",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "owner",
+										"type": "string"
+									}
+								],
+								"internalType": "struct Buy_stocks.stock",
+								"name": "stock_",
+								"type": "tuple"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sale_price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "customer",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "for_sale",
+								"type": "bool"
+							},
+							{
+								"internalType": "bool",
+								"name": "sold",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Buy_stocks.Sale",
+						"name": "s",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "size",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "size2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "size3",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "sender",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "reciever",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "walletexchange",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "wallets",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\Buy_Stocks.sol": "Buy_stocks"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\Buy_Stocks.sol": {
+			"keccak256": "0x40ed6cf2f0f5313b7264c7933e892f90526e64c249602c7377562b9f3456320f",
+			"urls": [
+				"bzz-raw://e2ed0ad75b6e6aa5b2f17c242526eb4587d1c104fa682571a08542431cd73deb",
+				"dweb:/ipfs/QmS4iMACnfpmw7ywYUzGqZRGzei3AnSFE2Z2kZmeXjnisc"
+			]
+		}
+	},
+	"version": 1
+}
